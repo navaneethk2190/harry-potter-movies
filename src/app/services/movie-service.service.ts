@@ -8,7 +8,6 @@ import { MovieDetail } from '../models/movie-detail.model';
   providedIn: 'root'
 })
 export class MovieServiceService {
-  getMovieDetail: any;
 
   constructor(private http: HttpClient) { }
   getAllMovies():Observable<Movie[]>{

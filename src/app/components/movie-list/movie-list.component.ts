@@ -36,9 +36,9 @@ export class MovieListComponent {
       this.applyFilter(change);
     });  
   }
-  applyFilter(filterParam: any) {
+  applyFilter(filterParam: { mTitle: string; mReleaseYear: number; }) {
     let title = filterParam.mTitle.toLowerCase().trim();
-    let releaseYear = filterParam.mReleaseYear;
+    let releaseYear = filterParam.mReleaseYear?.toString();
     if(title || releaseYear){
       this.filteredMovies = this.allMovies.filter((movie) => 
         movie.title.toLowerCase().includes(title || "") &&
