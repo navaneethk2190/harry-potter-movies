@@ -1,0 +1,8 @@
+.tbl-movie-detail td:nth-child(1) { 
+    text-align: right; 
+    font-weight: bold;
+    background-color: grey;
+}
+.tbl-movie-detail th { 
+    text-align: center; 
+}

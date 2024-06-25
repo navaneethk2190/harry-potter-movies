@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8"><button type="button" (click)="navigateMovieList()">Back </button></div>  
+            <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h1>{{movieDetail.title}}</h1>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="{{movieDetail.poster}}"></td>
+                <td><b>Summary:</b> {{movieDetail.summary}}</td>
+            </tr>
+        </table>
+    </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <br/><br/><br/>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+        <table class="table tbl-movie-detail">
+            <tbody>
+                <tr>
+                    <th colspan="2"><strong>Details</strong></th>
+                </tr>
+                <tr>
+                    <td align="right">Box office</td>
+                    <td>{{movieDetail.box_office|dollar}}</td>
+                </tr>
+                <tr>
+                    <td align="right">Budget</td>
+                    <td>{{movieDetail.budget|dollar}}</td>
+                </tr>
+                <tr>
+                    <td align="right">Duration</td>
+                    <td>{{movieDetail.duration|duration}}</td>
+                </tr>
+                <tr>
+                    <td align="right">Producers</td>
+                    <td>{{movieDetail.producers}}</td>
+                </tr>
+                <tr>
+                    <td align="right">Cinematographers</td>
+                    <td>{{movieDetail.cinematographers}}</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>  
+
+

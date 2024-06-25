@@ -26,7 +26,8 @@
               "src/mockServiceWorker.js"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "../node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": []
           },
@@ -92,5 +93,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "3d2d5838-cae9-4b72-aa4b-6f2d9005ba81"
   }
 }
